@@ -57,7 +57,7 @@ const Talent: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center p-4">
       {/* Large Card at the Top */}
-      <div className="bg-[#f6ffed] shadow-lg rounded-lg p-6 mb-6 w-full max-w-5xl">
+      <div className="rounded-lg p-6 mb-6 w-full max-w-4xl">
         <h1 className="text-2xl font-bold mb-4 text-center">Top Talent</h1>
         <p className="text-gray-700 text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, veniam!
@@ -69,7 +69,7 @@ const Talent: React.FC = () => {
         {talentList.map((talent, index) => (
           <div
             key={index}
-            className="bg-[#f6ffed] shadow-lg rounded-lg p-6"
+            className="rounded-lg p-6"
           >
             {/* <h2 className="text-xl font-semibold mb-2">{talent.name}</h2>
             <p className="text-gray-600">{talent.description}</p> */}
