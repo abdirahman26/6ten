@@ -20,7 +20,7 @@ export default function RootLayout({
         className={inter.className}
         style={{
           // backgroundImage: `url('/images/background.jpg')`,
-          backgroundColor: "black",
+          backgroundColor: "#b7eb8f", //d9f7be
           backgroundSize: "cover",
           backgroundPosition: "center",
           // backgroundRepeat: "no-repeat",

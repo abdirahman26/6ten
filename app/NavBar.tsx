@@ -27,12 +27,12 @@ function NavBar() {
   const linkClassName = (path: string) =>
     `block py-2 px-3 rounded md:p-0 ${
       activePath === path 
-        ? 'bg-[#389e0d] text-white md:bg-transparent md:text-[#389e0d] dark:text-[#389e0d]'
-        : 'text-white hover:bg-[#389e0d] md:hover:bg-transparent md:border-0 md:hover:text-[#389e0d] dark:text-white dark:hover:bg-gray-700 dark:hover:text-[#389e0d] md:dark:hover:bg-transparent'
+        ? 'bg-[#389e0d] text-white md:bg-transparent md:text-[#389e0d] dark:text-[#b7eb8f]'
+        : 'text-white hover:bg-[#389e0d] md:hover:bg-transparent md:border-0 md:hover:text-[#389e0d] dark:text-white dark:hover:bg-gray-700 dark:hover:text-[#b7eb8f] md:dark:hover:bg-transparent'
     }`;
 
   return (
-    <nav className="bg-[#135200] border-gray-200 dark:bg-[#135200]">
+    <nav className="bg-[#135200] border-gray-200 dark:bg-[#135200] shadow-md">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse" onClick={() => handleClick('/')}>
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
