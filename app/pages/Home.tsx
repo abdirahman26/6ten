@@ -45,7 +45,7 @@ const ImageContainer = styled.div`
 function Home() {
   return (
     <HomeContainer>
-      <TextContainer>Welcome.</TextContainer>
+      <TextContainer>Lorem Ipsum</TextContainer>
       <ImageContainer />
     </HomeContainer>
   );

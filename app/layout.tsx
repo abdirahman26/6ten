@@ -19,7 +19,8 @@ export default function RootLayout({
       <body
         className={inter.className}
         style={{
-          backgroundImage: `url('/images/background.jpg')`,
+          // backgroundImage: `url('/images/background.jpg')`,
+          backgroundColor: "black",
           backgroundSize: "cover",
           backgroundPosition: "center",
           // backgroundRepeat: "no-repeat",
