@@ -34,7 +34,7 @@ function NavBar() {
 
   return (
     <nav className="bg-[#135200] border-gray-200 dark:bg-[#135200] shadow-md">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <div className="max-w-screen-4xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -132,7 +132,7 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+        <div className="hidden w-full md:block md:w-auto ml-auto" id="navbar-default">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#135200] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#135200] dark:bg-[#135200] dark:border-gray-700 items-center">
             <li>
               <Link
