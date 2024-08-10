@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { getTalentList } from '../functions/data/talent';
+import { GlareCardComponent } from '@components/GlareCard';
 
 interface Talent {
   name: string;
@@ -67,18 +68,7 @@ const Talent: React.FC = () => {
       {/* Cards Below */}
       <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {talentList.map((talent, index) => (
-          <div
-            key={index}
-            className="rounded-lg p-6"
-          >
-            {/* <h2 className="text-xl font-semibold mb-2">{talent.name}</h2>
-            <p className="text-gray-600">{talent.description}</p> */}
-            <img
-              src={talent.imageUrl}
-              alt={talent.name}
-              className="w-full h-auto object-cover rounded-lg"
-            />
-          </div>
+          <GlareCardComponent key={index} talent={talent} />
         ))}
       </div>
     </div>
