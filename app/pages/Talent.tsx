@@ -6,6 +6,7 @@ import { getTalentList } from '../functions/data/talent';
 interface Talent {
   name: string;
   description: string;
+  imageUrl: string;
 }
 
 const Talent: React.FC = () => {
@@ -56,24 +57,27 @@ const Talent: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col items-center p-4">
       {/* Large Card at the Top */}
-      <div className="bg-[#f6ffed] shadow-lg rounded-lg p-6 mb-6 w-full max-w-4xl">
-        <h1 className="text-2xl font-bold mb-4">Top Talent</h1>
-        <p className="text-gray-700">
-          This is a large card that represents the top talent. You can include
-          more information here, like a description, images, or any other
-          relevant details.
+      <div className="bg-[#f6ffed] shadow-lg rounded-lg p-6 mb-6 w-full max-w-5xl">
+        <h1 className="text-2xl font-bold mb-4 text-center">Top Talent</h1>
+        <p className="text-gray-700 text-center">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, veniam!
         </p>
       </div>
 
       {/* Cards Below */}
-      <div className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="w-full max-w-5xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {talentList.map((talent, index) => (
           <div
             key={index}
             className="bg-[#f6ffed] shadow-lg rounded-lg p-6"
           >
-            <h2 className="text-xl font-semibold mb-2">{talent.name}</h2>
-            <p className="text-gray-600">{talent.description}</p>
+            {/* <h2 className="text-xl font-semibold mb-2">{talent.name}</h2>
+            <p className="text-gray-600">{talent.description}</p> */}
+            <img
+              src={talent.imageUrl}
+              alt={talent.name}
+              className="w-full h-auto object-cover rounded-lg"
+            />
           </div>
         ))}
       </div>
