@@ -29,7 +29,5 @@ export function GlareCardComponent({ talent }: { talent: Talent }) {
                 </div>
             </GlareCard>
         </div>
-      </div>
-    </div>
   );
 }
