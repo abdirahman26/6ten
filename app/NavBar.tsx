@@ -28,13 +28,13 @@ function NavBar() {
   const linkClassName = (path: string) =>
     `block py-2 px-3 rounded md:p-0 ${
       activePath === path
-        ? "bg-[#389e0d] text-white md:bg-transparent md:text-[#389e0d] dark:text-[#b7eb8f]"
-        : "text-white hover:bg-[#389e0d] md:hover:bg-transparent md:border-0 md:hover:text-[#389e0d] dark:text-white dark:hover:bg-gray-700 dark:hover:text-[#b7eb8f] md:dark:hover:bg-transparent"
+        ? "bg-[var(--primaryLight)] text-white md:bg-transparent md:text-[var(--primaryLight)] dark:text-[#b7eb8f]"
+        : "text-white hover:bg-[var(--light)] md:hover:bg-transparent md:border-0 md:hover:text-[var(--primaryLight)] dark:text-white dark:hover:bg-gray-700 dark:hover:text-[#b7eb8f] md:dark:hover:bg-transparent"
     }`;
 
   return (
-    <nav className="bg-[#135200] border-gray-200 dark:bg-[#135200] shadow-md">
-      <div className="max-w-screen-4xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-[var(--primary)] border-gray-200 dark:bg-[#135200] shadow-md">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -72,7 +72,7 @@ function NavBar() {
           className={`md:hidden w-full ${isMenuOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[#135200]">
+          <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--primary)]">
             <li>
               <Link
                 href="/"
@@ -132,8 +132,8 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        <div className="hidden w-full md:block md:w-auto ml-auto" id="navbar-default">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-[#135200] md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-[#135200] dark:bg-[#135200] dark:border-gray-700 items-center">
+        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-inherit md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-inherit dark:bg-inherit dark:border-gray-700 items-center">
             <li>
               <Link
                 href="/"

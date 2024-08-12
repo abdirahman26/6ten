@@ -1,10 +1,10 @@
-import React from 'react';
-import { GlareCard } from './ui/glare-card';
+import React from "react";
+import { GlareCard } from "./ui/glare-card";
 
 interface Talent {
-    name: string;
-    description: string;
-    imageUrl: string;
+  name: string;
+  description: string;
+  imageUrl: string;
 }
 
 export function GlareCardComponent({ talent }: { talent: Talent }) {
@@ -29,5 +29,7 @@ export function GlareCardComponent({ talent }: { talent: Talent }) {
                 </div>
             </GlareCard>
         </div>
-    );
+      </div>
+    </div>
+  );
 }

@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import { getTalentList } from '../functions/data/talent';
-import { GlareCardComponent } from '@components/GlareCard';
+import React, { useEffect, useState } from "react";
+import { getTalentList } from "../functions/data/talent";
+import { GlareCardComponent } from "@components/GlareCard";
 
 interface Talent {
   name: string;
@@ -15,11 +15,9 @@ const Talent: React.FC = () => {
   const [talentList, setTalentList] = useState<Talent[]>([]);
 
   useEffect(() => {
-    // Fetch talent list from the server
     const fetchTalentList = async () => {
       const response = await getTalentList();
 
-      // Convert object to array
       const talentsArray: Talent[] = Object.values(response);
 
       setTalentList(talentsArray);
@@ -61,7 +59,8 @@ const Talent: React.FC = () => {
       <div className="rounded-lg p-6 mb-6 w-full max-w-4xl">
         <h1 className="text-2xl font-bold mb-4 text-center">Top Talent</h1>
         <p className="text-gray-700 text-center">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, veniam!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus,
+          veniam!
         </p>
       </div>
 

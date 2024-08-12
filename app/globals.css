@@ -8,3 +8,12 @@
     text-wrap: balance;
   }
 }
+
+:root {
+  --light: #dad7cdff;
+  --primaryLight: #a3b18aff;
+  --primary: #588157ff;
+  --primaryDark: #3a5a40ff;
+  --dark: #344e41ff;
+
+}
