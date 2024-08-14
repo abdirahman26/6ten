@@ -4,120 +4,102 @@ import React from "react";
 
 export function ContactSection() {
     return (
-        <section id="contact">
-            <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
-                <div className="mb-4 text-center">
-                    <p className="text-base font-semibold uppercase tracking-wide text-blue-600 dark:text-blue-200">
-                        Contact
-                    </p>
-                    <h2 className="font-heading mb-4 font-bold tracking-tight text-gray-900 dark:text-white text-3xl sm:text-5xl">
-                        Get in Touch
-                    </h2>
-                    <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600 dark:text-slate-400">
-                        In hac habitasse platea dictumst
+        <section className="body-font relative text-gray-400">
+            <div className="container mx-auto px-5 py-24">
+                <div className="mb-12 flex w-full flex-col text-center">
+                    <h1 className="title-font mb-4 text-2xl font-medium text-white sm:text-3xl">Contact Us</h1>
+                    <p className="mx-auto text-base leading-relaxed lg:w-2/3 text-white">
+                        Feel free to reach out to us! Whether you have a question, feedback, or a collaboration proposal, we'd love to hear from you.
                     </p>
                 </div>
-                <div className="flex items-stretch justify-center">
-                    <div className="grid md:grid-cols-2 gap-10">
-                        <div className="h-full pr-6">
-                            <p className="mt-3 mb-12 text-lg text-gray-600 dark:text-slate-400">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad odit sunt, autem non quas sit, numquam quam alias amet repudiandae doloremque iste omnis, officia architecto doloribus porro possimus ex quidem.
-                            </p>
-                            <ul className="space-y-6">
-                                <li className="flex items-start">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                                            <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
-                                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="ml-4">
-                                        <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white">Our Address</h3>
-                                        <p className="text-gray-600 dark:text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        <p className="text-gray-600 dark:text-slate-400">Lorem ipsum</p>
-                                    </div>
-                                </li>
-                                <li className="flex items-start">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                                            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
-                                            <path d="M15 7a2 2 0 0 1 2 2"></path>
-                                            <path d="M15 3a6 6 0 0 1 6 6"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="ml-4">
-                                        <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white">Contact</h3>
-                                        <p className="text-gray-600 dark:text-slate-400">Mobile: +1 (123) 456-7890</p>
-                                        <p className="text-gray-600 dark:text-slate-400">Mail: test@example.com</p>
-                                    </div>
-                                </li>
-                                <li className="flex items-start">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-blue-900 text-gray-50">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-6 w-6">
-                                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                                            <path d="M12 7v5l3 3"></path>
-                                        </svg>
-                                    </div>
-                                    <div className="ml-4">
-                                        <h3 className="text-lg font-medium leading-6 text-gray-900 dark:text-white">Working hours</h3>
-                                        <p className="text-gray-600 dark:text-slate-400">Monday - Friday: 08:00 - 17:00</p>
-                                        <p className="text-gray-600 dark:text-slate-400">Saturday &amp; Sunday: 08:00 - 12:00</p>
-                                    </div>
-                                </li>
-                            </ul>
+
+                <div className="mx-auto md:w-2/3 lg:w-1/2">
+                    <div className="-m-2 flex flex-wrap">
+                        <div className="w-1/2 p-2">
+                            <div className="relative">
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    className="peer w-full rounded border border-gray-700 bg-transparent py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
+                                    placeholder="Name"
+                                />
+                                <label
+                                    htmlFor="name"
+                                    className="absolute left-3 -top-6 text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                                >
+                                    Name
+                                </label>
+                            </div>
                         </div>
-                        <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
-                            <h2 className="mb-4 text-2xl font-bold dark:text-white">Ready to Get Started?</h2>
-                            <form id="contactForm">
-                                <div className="mb-6">
-                                    <div className="space-y-4">
-                                        <div>
-                                            <label htmlFor="name" className="block text-xs uppercase tracking-wider">Name</label>
-                                            <input
-                                                type="text"
-                                                id="name"
-                                                autoComplete="given-name"
-                                                placeholder="Your name"
-                                                className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300"
-                                                name="name"
-                                                required
-                                            />
-                                        </div>
-                                        <div>
-                                            <label htmlFor="email" className="block text-xs uppercase tracking-wider">Email</label>
-                                            <input
-                                                type="email"
-                                                id="email"
-                                                autoComplete="email"
-                                                placeholder="Your email address"
-                                                className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300"
-                                                name="email"
-                                                required
-                                            />
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <label htmlFor="message" className="block text-xs uppercase tracking-wider">Message</label>
-                                        <textarea
-                                            id="message"
-                                            name="message"
-                                            cols={30}
-                                            rows={5}
-                                            placeholder="Write your message..."
-                                            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300"
-                                            required
-                                        ></textarea>
-                                    </div>
-                                </div>
-                                <div className="text-center">
-                                    <button
-                                        type="submit"
-                                        className="w-full bg-blue-800 text-white px-6 py-3 font-semibold rounded-md"
-                                    >
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
+
+                        <div className="w-1/2 p-2">
+                            <div className="relative">
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    className="peer w-full rounded border border-gray-700 bg-transparent py-1 px-3 text-base leading-8 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
+                                    placeholder="Email"
+                                />
+                                <label
+                                    htmlFor="email"
+                                    className="absolute left-3 -top-6 text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                                >
+                                    Email
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className="mt-4 w-full p-2">
+                            <div className="relative">
+                                <textarea
+                                    id="message"
+                                    name="message"
+                                    className="peer h-32 w-full resize-none rounded border border-gray-700 bg-transparent py-1 px-3 text-base leading-6 text-gray-100 placeholder-transparent outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900"
+                                    placeholder="Message"
+                                ></textarea>
+                                <label
+                                    htmlFor="message"
+                                    className="absolute left-3 -top-6 text-sm leading-7 text-indigo-500 transition-all peer-placeholder-shown:left-3 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-focus:left-3 peer-focus:-top-6 peer-focus:text-sm peer-focus:text-indigo-500"
+                                >
+                                    Message
+                                </label>
+                            </div>
+                        </div>
+
+                        <div className="w-full p-2">
+                            <button className="mx-auto flex rounded border-0 bg-indigo-500 py-2 px-8 text-lg text-white hover:bg-indigo-600 focus:outline-none">
+                                Send
+                            </button>
+                        </div>
+
+                        <div className="mt-8 w-full border-t border-gray-800 p-2 pt-8 text-center">
+                            <a className="text-indigo-400">example@email.com</a>
+                            <p className="my-5 leading-normal">49 Smith St. <br />Saint Cloud, MN 56301</p>
+                            <span className="inline-flex">
+                                <a className="text-gray-500">
+                                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="h-5 w-5" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                                    </svg>
+                                </a>
+                                <a className="ml-4 text-gray-500">
+                                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="h-5 w-5" viewBox="0 0 24 24">
+                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                                    </svg>
+                                </a>
+                                <a className="ml-4 text-gray-500">
+                                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="h-5 w-5" viewBox="0 0 24 24">
+                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                                    </svg>
+                                </a>
+                                <a className="ml-4 text-gray-500">
+                                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="h-5 w-5" viewBox="0 0 24 24">
+                                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+                                    </svg>
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>
