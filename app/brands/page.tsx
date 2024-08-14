@@ -1,9 +1,5 @@
-import NavBar from "../NavBar";
+import Brands from "@/pages/Brands";
 
 export default function Page() {
-  return (
-    <>
-      <NavBar />
-    </>
-  );
+  return <Brands />;
 }

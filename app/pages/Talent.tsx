@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { getTalentList } from "../functions/data/talent";
+import { getTalentList } from "@components/ui/talent";
 import { GlareCardComponent } from "@components/GlareCard";
 
 interface Talent {
@@ -15,8 +15,8 @@ const Talent: React.FC = () => {
   const [talentList, setTalentList] = useState<Talent[]>([]);
 
   useEffect(() => {
-    const fetchTalentList = async () => {
-      const response = await getTalentList();
+    const fetchTalentList = () => {
+      const response = getTalentList();
 
       const talentsArray: Talent[] = Object.values(response);
 

@@ -1,4 +1,4 @@
-import NavBar from "../NavBar";
+import NavBar from "@components/NavBar";
 import ServicesSection from "../sections/Services/ServicesSection";
 import ServicesTopSection from "../sections/Services/ServicesTopSection";
 import ServicesMiddleAction from "@/sections/Services/SevicesMiddleSection";
@@ -8,7 +8,6 @@ import FAQSection from "@/sections/Services/ServicesFAQSection";
 export default function Page() {
   return (
     <>
-      <NavBar />
       <ServicesTopSection />
       <ServicesSection />
       <ServicesMiddleAction />

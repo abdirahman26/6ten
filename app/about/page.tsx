@@ -1,9 +1,5 @@
-import NavBar from "../NavBar";
+import About from "@/pages/About";
 
 export default function Page() {
-  return (
-    <>
-      <NavBar />
-    </>
-  );
+  return <About />;
 }

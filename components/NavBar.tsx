@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@components/Button";
+import { TbHeartHandshake } from "react-icons/tb";
 
 function NavBar() {
   const pathname = usePathname();
@@ -40,15 +41,11 @@ function NavBar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => handleClick("/")}
         >
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8"
-            alt="Flowbite Logo"
-          />
+          <span className="text-white font-bold text-4xl">6-TEN</span>
         </Link>
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[var(--light)] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           onClick={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>

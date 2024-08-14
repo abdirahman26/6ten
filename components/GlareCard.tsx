@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { GlareCard } from "./ui/glare-card";
+import { FaInstagram } from "react-icons/fa";
+import { FaTiktok } from "react-icons/fa";
 
 interface Talent {
   name: string;
@@ -8,26 +10,39 @@ interface Talent {
 }
 
 export function GlareCardComponent({ talent }: { talent: Talent }) {
-    return (
-        <div className="relative w-full h-full">
-            <GlareCard className="relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">
-                <img
-                    className="w-full h-full object-cover"
-                    src={talent.imageUrl}
-                    alt={talent.name}
-                />
-                <div className="absolute inset-0 flex flex-col items-center justify-center bg-blue-500 text-white opacity-0 hover:opacity-100 transition-opacity duration-300 p-6">
-                    <div className="flex flex-col items-center mb-auto">
-                        <p className="font-bold text-lg">{talent.name}</p>
-                    </div>
-                    <div className="flex flex-col items-center mt-auto">
-                        <p className="font-normal text-base text-center">
-                            test
-                            {talent.description}
-                        </p>
-                    </div>
-                </div>
-            </GlareCard>
-        </div>
+  const [hover, setHover] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHover(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+
+  return (
+    <div
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className="relative w-full h-full"
+    >
+      <GlareCard className="relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">
+        <img
+          className="w-full h-full object-cover"
+          src={talent.imageUrl}
+          alt={talent.name}
+        />
+
+        {hover && (
+          <div className="absolute inset-0 flex flex-col  bg-black bg-opacity-50 text-white z-20 p-4 gap-20">
+            <p className="font-bold text-lg mb-2">{talent.name}</p>
+            <p className="font-normal text-base text-center flex gap-3 justify-center mt-auto">
+              <FaInstagram className="inline mr-2 text-2xl" />
+              <FaTiktok className="inline mr-2 text-2xl" />
+            </p>
+          </div>
+        )}
+      </GlareCard>
+    </div>
   );
 }

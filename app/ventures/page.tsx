@@ -1,9 +1,5 @@
-import NavBar from "../NavBar";
+import Ventures from "@/pages/Ventures";
 
 export default function Page() {
-  return (
-    <>
-      <NavBar />
-    </>
-  );
+  return <Ventures />;
 }
