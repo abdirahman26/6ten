@@ -9,7 +9,7 @@ export function Button() {
   return (
     <div className=" flex items-center justify-center align">
       <Modal>
-        <ModalTrigger className="bg-[#ffffff] dark:bg-white dark:text-black text-[#135200] flex justify-center group/modal-btn">
+        <ModalTrigger className="bg-[#ffffff] dark:bg-[#ffffff] dark:text-[#135200] text-[#135200] flex justify-center group/modal-btn">
           <span className="group-hover/modal-btn:translate-x-40 text-center transition duration-500">
             Contact Us
           </span>
