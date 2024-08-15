@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@components/Footer";
 import NavBar from "@components/NavBar";
+import { BackgroundBeams } from "@components/ui/background-beams";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,18 +22,16 @@ export default function RootLayout({
       <body
         className={inter.className}
         style={{
-          // backgroundImage: `url('/images/background.jpg')`,
-          backgroundColor: "#b7eb8f", //d9f7be
+          backgroundColor: "#16161A",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          // backgroundRepeat: "no-repeat",
           margin: 0,
           padding: 0,
           height: "100vh",
           width: "100%",
-          // overflow: "hidden",
         }}
       >
+        <BackgroundBeams />
         <header>
           <NavBar />
         </header>

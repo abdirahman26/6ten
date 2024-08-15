@@ -10,9 +10,34 @@
 }
 
 :root {
+
+  /* dark theme */
+  --main: #16161a;
+
+
+  /* green theme */
   --light: #dad7cdff;
   --primaryLight: #a3b18aff;
   --primary: #588157ff;
   --primaryDark: #3a5a40ff;
   --dark: #344e41ff;
+
+
+  /* purple theme */
+  --russian-violet: #10002bff;
+  --russian-violet-2: #240046ff;
+  --persian-indigo: #3c096cff;
+  --tekhelet: #5a189aff;
+  --french-violet: #7b2cbfff;
+  --amethyst: #9d4eddff;
+  --heliotrope: #c77dffff;
+  --mauve: #e0aaffff;
+
+
+
+
+
+
+
+
 }
