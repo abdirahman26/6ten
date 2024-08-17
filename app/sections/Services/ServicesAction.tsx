@@ -10,12 +10,10 @@ const ServicesAction = () => {
         Contact us today to get started or learn more about how we can help you
         achieve your goals.
       </p>
-      <a
-        href="mailto:contact@youragency.com"
-        className="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-lg bg-gradient-to-r from-[var(--linePurple)] to-[var(--lineIndigo)]"
-      >
-        Get in Touch
-      </a>
+      <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+        <span>Get in Touch →</span>
+        <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+      </button>
     </section>
   );
 };

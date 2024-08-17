@@ -87,10 +87,10 @@ export const MovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-[var(--lineIndigo)] px-8 py-6 md:w-[450px]"
+            className="w-[350px] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-[var(--linePink)] px-8 py-6 md:w-[450px]"
             style={{
               background:
-                "linear-gradient(180deg, var(--linePurple), var(--linePink)",
+                "linear-gradient(180deg, var(--linePurple), var(--lineIndigo))",
             }}
             key={item.name}
           >
