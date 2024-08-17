@@ -6,10 +6,10 @@ function About() {
     <>
       <div className="flex items-center justify-center min-h-screen p-4">
         <div className="text-center max-w-4xl">
-          <h1 className="text-4xl font-bold mb-4">
+          <h1 className="text-4xl font-bold mb-4 text-[var(--textPrimary)]">
             6-TEN CONNECTS BRANDS TO MILLENNIAL, MUSLIM CREATORS.
           </h1>
-          <p className="text-lg mt-4 pt-7">
+          <p className="text-base mt-4 pt-7 text-[var(--textSecondary)]">
             We are a team of professionals who are dedicated to providing the
             best services to our clients. Our goal is to help you achieve your
             goals and dreams. We have a team of experts who are ready to help
