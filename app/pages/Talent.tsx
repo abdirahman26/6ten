@@ -57,8 +57,8 @@ const Talent: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center p-4">
       {/* Large Card at the Top */}
       <div className="rounded-lg p-6 mb-6 w-full max-w-4xl">
-        <h1 className="text-2xl font-bold mb-4 text-center">Top Talent</h1>
-        <p className="text-gray-700 text-center">
+        <h1 className="text-2xl font-bold mb-4 text-center text-[var(--textPrimary)]">Top Talent</h1>
+        <p className="text-[var(--textSecondary)] text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus,
           veniam!
         </p>
