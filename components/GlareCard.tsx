@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { GlareCard } from "./ui/glare-card";
 import { FaInstagram } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa";
+import Image from 'next/image';
 
 interface Talent {
   name: string;
@@ -27,10 +28,12 @@ export function GlareCardComponent({ talent }: { talent: Talent }) {
       className="relative w-full h-full"
     >
       <GlareCard className="relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105">
-        <img
+        <Image
           className="w-full h-full object-cover"
           src={talent.imageUrl}
           alt={talent.name}
+          width={300}
+          height={300}
         />
 
         {hover && (
