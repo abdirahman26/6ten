@@ -13,7 +13,7 @@ const Card: React.FC<CardProps> = ({ title, content }) => {
         <h2 className="text-3xl font-bold mb-2 text-[var(--textPrimary)]">
           {title}
         </h2>
-        <ColouredLine thickness="0.5" />
+        <ColouredLine />
       </div>
       <p className="text-lg text-center mb-4 text-[var(--textSecondary)] pt-5">
         {content}
