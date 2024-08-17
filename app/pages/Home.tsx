@@ -1,7 +1,9 @@
 import { ImagesSlider } from "@components/Image-Slider";
+import { TypewriterEffect } from "@components/ui/typewriter-effect";
 import { m, motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
+import { TypeWriterEffect } from "@components/TypeWriterEffect";
 
 function Home() {
   const slideVariants = [
@@ -12,37 +14,34 @@ function Home() {
   ];
 
   return (
-    <div className="flex h-screen justify-evenly items-center">
-      {/* <TextContainer>Lorem Ipsum</TextContainer> */}
-      {/* <ImageContainer /> */}
-      {/* <ImagesSlider images={slideVariants} /> */}
-      {/* <Carousel items={[slideVariants]} /> */}
-      <ImagesSlider images={slideVariants}>
+    <>
+      <div className="flex h-screen justify-center items-center pl-10 flex-col">
+        {/* <ImagesSlider images={slideVariants}>
         <motion.div
-          initial={{
-            opacity: 0,
-            y: -80,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.6,
-          }}
-          className="z-50 flex flex-col justify-center items-center"
-        >
-          <motion.p className=" uppercase font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-            Welcome to 6-TEN where we help <br /> muslim creators find their{" "}
-            <br /> audience
-          </motion.p>
-          <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-            <span>Join now →</span>
-            <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-          </button>
-        </motion.div>
-      </ImagesSlider>
-    </div>
+        initial={{
+          opacity: 0,
+          y: -80,
+        }}
+        animate={{
+          opacity: 1,
+          y: 0,
+        }}
+        transition={{
+          duration: 0.6,
+        }}
+        className="z-50 flex flex-col justify-center items-center"
+      > */}
+
+        <TypeWriterEffect />
+        {/* </motion.div>
+      </ImagesSlider> */}
+
+        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+          <span>Join now →</span>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+        </button>
+      </div>
+    </>
   );
 }
 

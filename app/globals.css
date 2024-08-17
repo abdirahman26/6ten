@@ -33,6 +33,17 @@
   --heliotrope: #c77dffff;
   --mauve: #e0aaffff;
 
+  /* line colors */
+
+  --linePink: #ec4899;
+  --linePurple: #a855f7;
+  --lineIndigo: #6366f1;
+
+  /* text colors */
+  --textPrimary: #6b7280;
+  --textSecondary: #d1d5db;
+  
+
 
 
 

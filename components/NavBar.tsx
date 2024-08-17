@@ -29,8 +29,8 @@ function NavBar() {
   const linkClassName = (path: string) =>
     `block py-2 px-3 rounded md:p-0 ${
       activePath === path
-        ? "bg-[var(--primaryLight)] text-white md:bg-transparent md:text-[var(--primaryLight)]"
-        : "text-white hover:bg-[var(--light)] md:hover:bg-transparent md:border-0 md:hover:text-[var(--primaryLight)]"
+        ? "bg-[#b625aa7b] text-white md:bg-transparent md:text-[#b625aa7b]"
+        : "text-white hover:bg-[#b625aa7b] md:hover:bg-transparent md:border-0 md:hover:text-[#b625aa7b]"
     }`;
 
   return (
@@ -45,7 +45,7 @@ function NavBar() {
         </Link>
         <button
           type="button"
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-[var(--light)] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           onClick={toggleMenu}
         >
           <span className="sr-only">Open main menu</span>
@@ -69,7 +69,7 @@ function NavBar() {
           className={`md:hidden w-full ${isMenuOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--primary)]">
+          <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--main)]">
             <li>
               <Link
                 href="/"
