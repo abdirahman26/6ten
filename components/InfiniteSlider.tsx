@@ -1,45 +1,107 @@
+import Image from 'next/image';
+
 const InfiniteSlider = () => {
 
   return (
     <div className="w-[40%] overflow-hidden inline-flex flex-nowrap">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Facebook" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
+            alt="Facebook"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Disney" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
+            alt="Disney"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Airbnb" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
+            alt="Airbnb"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="Apple" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
+            alt="Apple"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Spark" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
+            alt="Spark"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg" alt="Samsung" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg"
+            alt="Samsung"
+            width={158}
+            height={48}
+          />
         </li>
       </ul>
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg" alt="Facebook" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
+            alt="Facebook"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg" alt="Disney" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
+            alt="Disney"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg" alt="Airbnb" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
+            alt="Airbnb"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="Apple" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
+            alt="Apple"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg" alt="Spark" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
+            alt="Spark"
+            width={158}
+            height={48}
+          />
         </li>
         <li>
-          <img src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg" alt="Samsung" />
+          <Image
+            src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg"
+            alt="Samsung"
+            width={158}
+            height={48}
+          />
         </li>
       </ul>
     </div>
