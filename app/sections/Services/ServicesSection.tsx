@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 const ServicesSection = () => {
     return (
@@ -14,10 +15,12 @@ const ServicesSection = () => {
                                 </p>
                             </div>
                             <div className="mx-auto w-1/2 md:w-1/3">
-                                <img
+                                <Image
                                     src="https://images.ctfassets.net/ihx0a8chifpc/pkPsn4xvlsW7rV74rsMhW/9b749af2555183d91e84b9879422c180/placehold-1280x720.jpg?w=1280&q=60&fm=webp"
-                                    alt="Right Image"
+                                    alt="Advanced Facial Recognition"
                                     className="rounded-lg"
+                                    width={1280}
+                                    height={720}
                                 />
                             </div>
                         </div>
@@ -30,10 +33,12 @@ const ServicesSection = () => {
                                 </p>
                             </div>
                             <div className="mx-auto w-1/2 md:w-1/3">
-                                <img
+                                <Image
                                     src="https://images.ctfassets.net/ihx0a8chifpc/pkPsn4xvlsW7rV74rsMhW/9b749af2555183d91e84b9879422c180/placehold-1280x720.jpg?w=1280&q=60&fm=webp"
-                                    alt="Right Image"
+                                    alt="Multi-Device Synchronization"
                                     className="rounded-lg"
+                                    width={1280}
+                                    height={720}
                                 />
                             </div>
                         </div>
