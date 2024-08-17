@@ -45,7 +45,7 @@ function Home() {
 
         <div className="flex flex-col items-center justify-center mt-4 pt-10 pb-10">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-4xl font-bold text-center text-[var(--textSecondary)]"><span className="text-[#b625ab]">6-TEN</span><span className="text-[#b625ab]">.</span> Clientele</h1>
+            <h1 className="text-4xl font-bold text-center text-[var(--textSecondary)]">6-TEN<span className="text-[#b625ab]">.</span> Clientele</h1>
             {/* <div className="py-0.5 px-4 text-left md:text-center font-medium font-sans tracking-tight text-sm bg-gradient-to-r text-white from-pink-500 via-purple-500 to-indigo-500 w-full"></div> */}
             <ColouredLine 
             width={"full"}
