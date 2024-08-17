@@ -34,7 +34,7 @@ function NavBar() {
     }`;
 
   return (
-    <nav className="bg-[var(--main)] border-gray-200 shadow-md">
+    <nav className=" border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"

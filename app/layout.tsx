@@ -27,15 +27,16 @@ export default function RootLayout({
           backgroundPosition: "center",
           margin: 0,
           padding: 0,
-          height: "100vh",
+          height: "100%",
           width: "100%",
+          position: "relative",
         }}
       >
-        <BackgroundBeams />
-        <header>
+        <header className="relative z-20">
           <NavBar />
         </header>
-        {children}
+        <div className="z-20 relative ">{children}</div>
+        <BackgroundBeams />
         <footer>
           <Footer />
         </footer>
