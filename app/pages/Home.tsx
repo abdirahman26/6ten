@@ -4,7 +4,7 @@ import { m, motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { TypeWriterEffect } from "@components/TypeWriterEffect";
-import { InfiniteSlider } from "@components/InfiniteSlider";
+import InfiniteSlider from "@components/InfiniteSlider";
 
 function Home() {
   const slideVariants = [
@@ -42,7 +42,7 @@ function Home() {
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
         </button>
 
-          <InfiniteSlider />
+        <InfiniteSlider />
 
       </div>
     </>
