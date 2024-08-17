@@ -1,4 +1,3 @@
-import { ImagesSlider } from "@components/Image-Slider";
 import { TypewriterEffect } from "@components/ui/typewriter-effect";
 import { m, motion } from "framer-motion";
 import React from "react";
