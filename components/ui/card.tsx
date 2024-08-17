@@ -1,4 +1,5 @@
-import React from 'react';
+import ColouredLine from "@components/ColouredLine";
+import React from "react";
 
 interface CardProps {
   title: string;
@@ -9,17 +10,19 @@ const Card: React.FC<CardProps> = ({ title, content }) => {
   return (
     <div className="p-8 w-full max-w-lg border border-gray-300 rounded-lg shadow-lg">
       <div className="mb-6 text-center">
-        <h2 className="text-3xl font-bold mb-2 text-[var(--textPrimary)]">{title}</h2>
-        <div className="border-b-4 border-blue-500 mx-auto w-1/2"></div>
+        <h2 className="text-3xl font-bold mb-2 text-[var(--textPrimary)]">
+          {title}
+        </h2>
+        <ColouredLine thickness="0.5" />
       </div>
-      <p className="text-lg text-center mb-4 text-[var(--textSecondary)]">{content}</p>
+      <p className="text-lg text-center mb-4 text-[var(--textSecondary)] pt-5">
+        {content}
+      </p>
       <div className="text-center">
-        <a
-          href="#contact"
-          className="inline-block px-6 py-3 bg-blue-500 text-white rounded-lg font-semibold hover:bg-blue-600 transition-colors duration-300 bg-gradient-to-r from-[var(--linePurple)] to-[var(--lineIndigo)]"
-        >
-          Learn More
-        </a>
+        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+          <span>Learn More</span>
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+        </button>
       </div>
     </div>
   );

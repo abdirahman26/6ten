@@ -4,6 +4,7 @@ import { m, motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
 import { TypeWriterEffect } from "@components/TypeWriterEffect";
+import InfiniteSlider from "@components/InfiniteSlider";
 
 function Home() {
   const slideVariants = [
@@ -29,7 +30,7 @@ function Home() {
         transition={{
           duration: 0.6,
         }}
-        className="z-50 flex flex-col justify-center items-center"
+        classNameName="z-50 flex flex-col justify-center items-center"
       > */}
 
         <TypeWriterEffect />
@@ -40,6 +41,9 @@ function Home() {
           <span>Join now →</span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
         </button>
+
+        <InfiniteSlider />
+
       </div>
     </>
   );

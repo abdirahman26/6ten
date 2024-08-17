@@ -9,6 +9,22 @@
   }
 }
 
+@keyframes slide-left {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.carousel {
+  display: flex;
+  width: 200%; /* Adjust to the combined width of duplicated items */
+  animation: slide-left 10s linear infinite;
+}
+
+.carousel img {
+  width: auto; /* Ensure images scale properly */
+}
+
+
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
