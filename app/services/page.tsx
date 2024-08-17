@@ -12,7 +12,7 @@ export default function Page() {
       <ServicesSection />
       <ServicesMiddleAction />
       <ServicesAction />
-      <FAQSection />
+      {/* <FAQSection /> */}
     </>
   );
 }

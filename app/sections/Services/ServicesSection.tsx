@@ -7,8 +7,8 @@ const ServicesSection = () => {
                 <div className="space-y-16">
                     <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-16 md:justify-center md:flex md:items-center">
                         <div className="w-full md:w-1/4 space-y-4">
-                            <h3 className="font-medium text-2xl">Advanced Facial Recognition</h3>
-                            <p>
+                            <h3 className="font-medium text-2xl text-[var(--textPrimary)]">Advanced Facial Recognition</h3>
+                            <p className="text-[var(--textSecondary)]">
                                 The product is equipped with an advanced facial recognition system that can accurately identify and authenticate individuals based on their unique facial features. This feature provides enhanced security by allowing access only to authorized users.
                             </p>
                         </div>
@@ -22,8 +22,8 @@ const ServicesSection = () => {
                     </div>
                     <div className="space-y-8 md:space-y-0 text-center md:text-left md:space-x-20 md:justify-center md:flex md:items-center md:flex-row-reverse gap-20">
                         <div className="w-full md:w-1/4 space-y-4">
-                            <h3 className="font-medium text-2xl">Multi-Device Synchronization</h3>
-                            <p>
+                            <h3 className="font-medium text-2xl text-[var(--textPrimary)]">Multi-Device Synchronization</h3>
+                            <p className="text-[var(--textSecondary)]">
                                 This product offers seamless synchronization across multiple devices. Users can easily sync their data, settings, and preferences across devices such as smartphones, tablets, and computers.
                             </p>
                         </div>

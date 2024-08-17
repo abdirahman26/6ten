@@ -41,7 +41,7 @@ function NavBar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => handleClick("/")}
         >
-          <span className="text-white font-bold text-4xl">6-TEN</span>
+          <span className="text-white font-bold text-4xl">6-TEN<span className="text-[#b625ab]">.</span></span>
         </Link>
         <button
           type="button"
@@ -156,15 +156,6 @@ function NavBar() {
                 onClick={() => handleClick("/talent")}
               >
                 Our Talent
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/brands"
-                className={linkClassName("/brands")}
-                onClick={() => handleClick("/brands")}
-              >
-                Brands
               </Link>
             </li>
             <li>
