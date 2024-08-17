@@ -5,6 +5,7 @@ import React from "react";
 import styled from "styled-components";
 import { TypeWriterEffect } from "@components/TypeWriterEffect";
 import InfiniteSlider from "@components/InfiniteSlider";
+import ColouredLine from "@components/ColouredLine";
 
 function Home() {
   const slideVariants = [
@@ -41,6 +42,16 @@ function Home() {
           <span>Join now →</span>
           <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
         </button>
+
+        <div className="flex flex-col items-center justify-center mt-4 pt-10 pb-10">
+          <div className="flex flex-col items-center justify-center">
+            <h1 className="text-4xl font-bold text-center text-[var(--textSecondary)]">6-TEN<span className="text-[#b625ab]">.</span> Clientele</h1>
+            {/* <div className="py-0.5 px-4 text-left md:text-center font-medium font-sans tracking-tight text-sm bg-gradient-to-r text-white from-pink-500 via-purple-500 to-indigo-500 w-full"></div> */}
+            <ColouredLine 
+            width={"full"}
+            />
+          </div>
+        </div>
 
         <InfiniteSlider />
 
