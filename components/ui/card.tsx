@@ -12,7 +12,7 @@ const Card: React.FC<CardProps> = ({ title, content }) => {
         <h2 className="text-3xl font-bold mb-2 text-[var(--textPrimary)]">{title}</h2>
         <div className="border-b-4 border-blue-500 mx-auto w-1/2"></div>
       </div>
-      <p className="text-lg text-gray-700 text-center mb-4 text-[var(--textSecondary)]">{content}</p>
+      <p className="text-lg text-center mb-4 text-[var(--textSecondary)]">{content}</p>
       <div className="text-center">
         <a
           href="#contact"

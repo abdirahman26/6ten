@@ -3,7 +3,6 @@ import React from "react";
 const ServicesTopSection = () => {
     return (
         <div>
-            {/* Full-Screen Image Section */}
             <div className="relative h-screen w-full">
                 <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
                     <h1 className="text-white text-4xl md:text-6xl font-bold text-[var(--textPrimary)]">Empowering Creators to Shine</h1>
