@@ -25,6 +25,9 @@ const Component = () => {
       <Slider.Slide>
         <img src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="any3" className='w-36' />
       </Slider.Slide>
+      <Slider.Slide>
+        <img src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg" alt="any3" className='w-36' />
+      </Slider.Slide>
     </Slider>
     </div>
   )
