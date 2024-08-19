@@ -24,7 +24,7 @@ export function TypeWriterEffect() {
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[rem]  ">
-      <p className="text-gray-300 text-lg sm:text-lg">
+      <p className="text-gray-300 lg:text-xl xl:text-2xl sm:text-lg">
         The road to stardom starts from here
       </p>
       <TypewriterEffectSmooth words={words} />
