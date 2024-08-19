@@ -1,5 +1,6 @@
 import React from "react";
 import { InfiniteMovingCards } from "@components/MovingCards";
+import ServicesAction from "@/sections/Services/ServicesAction";
 // The about us page
 function About() {
   return (
@@ -24,6 +25,11 @@ function About() {
           </p>
         </div>
       </div>
+      <ServicesAction
+        header="Here Are Some Inspiring Testimonials to Get You started."
+        message="Embark on your journey by taking and the first step."
+        button="Reach Out →"
+      />
       <InfiniteMovingCards />
     </>
   );

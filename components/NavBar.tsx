@@ -41,7 +41,9 @@ function NavBar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => handleClick("/")}
         >
-          <span className="text-white font-bold text-4xl">6-TEN<span className="text-[#b625ab]">.</span></span>
+          <span className="text-white font-bold text-4xl">
+            6-TEN<span className="text-[#b625ab]">.</span>
+          </span>
         </Link>
         <button
           type="button"
@@ -69,7 +71,7 @@ function NavBar() {
           className={`md:hidden w-full ${isMenuOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--main)]">
+          <ul className=" gap-2 font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--main)]">
             <li>
               <Link
                 href="/"
@@ -95,15 +97,6 @@ function NavBar() {
                 onClick={() => handleClick("/talent")}
               >
                 Our Talent
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/brands"
-                className={linkClassName("/brands")}
-                onClick={() => handleClick("/brands")}
-              >
-                Brands
               </Link>
             </li>
             <li>

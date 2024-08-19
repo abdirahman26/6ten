@@ -11,8 +11,12 @@ export default function Page() {
       <ServicesTopSection />
       <ServicesSection />
       <ServicesMiddleAction />
-      <ServicesAction />
-      {/* <FAQSection /> */}
+      <ServicesAction
+        header="Ready to Take Your Social Media to the Next Level?"
+        message="Contact us today to get started or learn more about how we can help you
+        achieve your goals."
+        button="Get in Touch →"
+      />
     </>
   );
 }

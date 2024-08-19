@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { getTalentList } from "@components/ui/talent";
 import { GlareCardComponent } from "@components/GlareCard";
+import ServicesAction from "@/sections/Services/ServicesAction";
 
 interface Talent {
   name: string;
@@ -57,7 +58,9 @@ const Talent: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center p-4">
       {/* Large Card at the Top */}
       <div className="rounded-lg p-6 mb-6 w-full max-w-4xl">
-        <h1 className="text-2xl font-bold mb-4 text-center text-[var(--textPrimary)]">Top Talent</h1>
+        <h1 className="text-2xl font-bold mb-4 text-center text-[var(--textPrimary)]">
+          Top Talent
+        </h1>
         <p className="text-[var(--textSecondary)] text-center">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus,
           veniam!
@@ -70,6 +73,11 @@ const Talent: React.FC = () => {
           <GlareCardComponent key={index} talent={talent} />
         ))}
       </div>
+      <ServicesAction
+        header="Prepared to Become our Newest Talent?"
+        message="Join our team along with the amazing talents we have alreay and kickstart your journey to success."
+        button="Get Started →"
+      />
     </div>
   );
 };
