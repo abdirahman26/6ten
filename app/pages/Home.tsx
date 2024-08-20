@@ -16,7 +16,7 @@ function Home() {
 
   return (
     <>
-      <div className="flex h-screen justify-center items-center pl-10 flex-col">
+      <div className="flex h-screen justify-center items-center flex-col">
         <TypeWriterEffect />
         <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
           <span>Join now →</span>
@@ -33,7 +33,11 @@ function Home() {
           </div>
         </div>
 
-        <InfiniteSlider />
+        <div className="flex items-center justify-center p-4">
+          <div className="max-w-[20rem] sm:max-w-[50rem]">
+            <InfiniteSlider />
+          </div>
+        </div>
       </div>
     </>
   );

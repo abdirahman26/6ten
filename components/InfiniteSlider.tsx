@@ -3,7 +3,7 @@ import Image from 'next/image';
 const InfiniteSlider = () => {
 
   return (
-    <div className="md:w-[40%] sm:w-full overflow-hidden inline-flex flex-nowrap">
+    <div className="flex overflow-hidden flex-nowrap">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
         <li>
           <Image
