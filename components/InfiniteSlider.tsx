@@ -1,108 +1,102 @@
-import Image from "next/image";
+import Image from 'next/image';
+import ForeinCircles from '@public/images/Forein_Circles.png';
+import SunnahGuy from '@public/images/sunnahguy_white.jpg';
+import OliveTree from '@public/images/olivetree.jpg';
+import Faithfuel from '@public/images/faithfuel.svg';
+import Quranly from '@public/images/Quranly.png';
 
 const InfiniteSlider = () => {
   return (
-    <div className="w-[40%] overflow-hidden inline-flex flex-nowrap">
+    <div className="flex overflow-hidden flex-nowrap">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-            alt="Facebook"
-            width={158}
-            height={48}
+          <img
+            src={SunnahGuy.src}
+            alt="The Sunnah Guy"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-            alt="Disney"
-            width={158}
-            height={48}
+          <img
+            src={OliveTree.src}
+            alt="Olive Tree Events"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-            alt="Airbnb"
-            width={158}
-            height={48}
+          <img
+            src={Faithfuel.src}
+            alt="Faithfuel"
+            width={79}
+            height={24}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-            alt="Apple"
-            width={158}
-            height={48}
+          <img
+            src={Quranly.src}
+            alt="Quranly"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-            alt="Spark"
-            width={158}
-            height={48}
-          />
-        </li>
-        <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg"
-            alt="Samsung"
-            width={158}
-            height={48}
+          <img
+            src={ForeinCircles.src}
+            alt="Forein Circles"
+            width={79}
+            height={24}
+            style={{ borderRadius: '30%' }}
           />
         </li>
       </ul>
-      <ul
-        className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll"
-        aria-hidden="true"
-      >
-        <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-            alt="Facebook"
-            width={158}
-            height={48}
+      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+      <li>
+          <img
+            src={SunnahGuy.src}
+            alt="The Sunnah Guy"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-            alt="Disney"
-            width={158}
-            height={48}
+          <img
+            src={OliveTree.src}
+            alt="Olive Tree Events"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-            alt="Airbnb"
-            width={158}
-            height={48}
+          <img
+            src={Faithfuel.src}
+            alt="Faithfuel"
+            width={79}
+            height={24}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-            alt="Apple"
-            width={158}
-            height={48}
+          <img
+            src={Quranly.src}
+            alt="Quranly"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-            alt="Spark"
-            width={158}
-            height={48}
-          />
-        </li>
-        <li>
-          <Image
-            src="https://tailwindui.com/img/logos/158x48/laravel-logo-white.svg"
-            alt="Samsung"
-            width={158}
-            height={48}
+          <img
+            src={ForeinCircles.src}
+            alt="Forein Circles"
+            width={79}
+            height={24}
+            style={{ borderRadius: '30%' }}
           />
         </li>
       </ul>

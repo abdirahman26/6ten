@@ -11,21 +11,24 @@
   }
 }
 
-@keyframes slide-left {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .carousel {
   display: flex;
   width: 200%; /* Adjust to the combined width of duplicated items */
-  animation: slide-left 10s linear infinite;
+  animation: infinite-scroll 25s linear infinite; /* Ensure seamless scrolling */
 }
 
 .carousel img {
   width: auto; /* Ensure images scale properly */
 }
-
 
 /* WebKit-based browsers */
 ::-webkit-scrollbar {
