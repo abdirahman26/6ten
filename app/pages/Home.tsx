@@ -34,7 +34,7 @@ function Home() {
         </div>
 
         <div className="flex items-center justify-center p-4">
-          <div className="max-w-[20rem] sm:max-w-[50rem]">
+          <div className="max-w-[20rem] sm:max-w-[30rem]">
             <InfiniteSlider />
           </div>
         </div>
