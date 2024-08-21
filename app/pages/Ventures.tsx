@@ -13,7 +13,7 @@ function Ventures() {
             Where Influence Meets Business
           </h1>
           <p className="text-lg md:text-2xl mt-4 text-[var(--textSecondary)]">
-            Empowering your creativity with strategic support. Let's bring your
+            Empowering your creativity with strategic support. Let us bring your
             vision to life together
           </p>
         </div>
