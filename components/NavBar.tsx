@@ -29,8 +29,8 @@ function NavBar() {
   const linkClassName = (path: string) =>
     `block py-2 px-3 rounded md:p-0 ${
       activePath === path
-        ? "bg-[#b625aa7b] text-white md:bg-transparent md:text-[#b625aa7b]"
-        : "text-white hover:bg-[#b625aa7b] md:hover:bg-transparent md:border-0 md:hover:text-[#b625aa7b]"
+        ? "bg-cyan-500 text-white md:bg-transparent md:text-cyan-500 md:border-0"
+        : "text-white hover:bg-cyan-500 md:hover:bg-transparent md:border-0 md:hover:text-cyan-500"
     }`;
 
   return (
@@ -42,7 +42,7 @@ function NavBar() {
           onClick={() => handleClick("/")}
         >
           <span className="text-white font-bold text-4xl">
-            6-TEN<span className="text-[#b625ab]">.</span>
+            6-TEN<span className="text-cyan-600">.</span>
           </span>
         </Link>
         <button

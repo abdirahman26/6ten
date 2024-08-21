@@ -6,7 +6,6 @@ import Faithfuel from '@public/images/faithfuel.svg';
 import Quranly from '@public/images/Quranly.png';
 
 const InfiniteSlider = () => {
-
   return (
     <div className="flex overflow-hidden flex-nowrap">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
@@ -102,7 +101,7 @@ const InfiniteSlider = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default InfiniteSlider;

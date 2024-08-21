@@ -92,7 +92,7 @@ export function ContactSection() {
                     name="name"
                     id="name"
                     placeholder="Full Name"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
                   />
                 </div>
 
@@ -105,7 +105,7 @@ export function ContactSection() {
                     name="email"
                     id="email"
                     placeholder="Email"
-                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white   border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    className="w-100 mt-2 py-3 px-3 rounded-lg bg-white   border-gray-400 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
                   />
                 </div>
 
@@ -117,13 +117,13 @@ export function ContactSection() {
                     name="message"
                     id="message"
                     placeholder="Your Message"
-                    className=" h-52 w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+                    className=" h-52 w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400 text-gray-800 font-semibold focus:border-blue-500 focus:outline-none"
                   ></textarea>
                 </div>
 
-                <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+                <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-cyan-500 text-white mx-auto text-center rounded-full relative mt-4">
                   <span>Submit →</span>
-                  <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+                  <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-teal-500 to-transparent" />
                 </button>
 
                 <p className="leading-relaxed text-xl text-gray-900 mt-8"></p>
