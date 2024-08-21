@@ -15,9 +15,9 @@ const ServicesAction = ({ header, message, button }: ServicesActionProps) => {
       </h2>
       <p className="text-lg mt-4 text-[var(--textSecondary)]">{message}</p>
       <Link href="/contact">
-        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-cyan-500 text-white mx-auto text-center rounded-full relative mt-4">
           <span>{button}</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-teal-500 to-transparent" />
         </button>
       </Link>
     </section>

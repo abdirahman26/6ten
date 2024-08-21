@@ -1,7 +1,6 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const InfiniteSlider = () => {
-
   return (
     <div className="w-[40%] overflow-hidden inline-flex flex-nowrap">
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
@@ -54,7 +53,10 @@ const InfiniteSlider = () => {
           />
         </li>
       </ul>
-      <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+      <ul
+        className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll"
+        aria-hidden="true"
+      >
         <li>
           <Image
             src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
@@ -105,7 +107,7 @@ const InfiniteSlider = () => {
         </li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
 export default InfiniteSlider;

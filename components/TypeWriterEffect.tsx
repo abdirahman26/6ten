@@ -19,7 +19,7 @@ export function TypeWriterEffect() {
     },
     {
       text: "6-TEN.",
-      className: "text-[#b625ab]",
+      className: "text-cyan-500",
     },
   ];
   return (

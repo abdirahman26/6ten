@@ -18,15 +18,15 @@ function Home() {
     <>
       <div className="flex h-screen justify-center items-center pl-10 flex-col">
         <TypeWriterEffect />
-        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-cyan-500 text-white mx-auto text-center rounded-full relative mt-4">
           <span>Join now →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-teal-500 to-transparent" />
         </button>
 
         <div className="flex flex-col items-center justify-center mt-4 pt-10 pb-10">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-center text-[var(--textSecondary)]">
-              6-TEN<span className="text-[#b625ab]">.</span> Clientele
+              6-TEN<span className="text-cyan-600">.</span> Clientele
             </h1>
             {/* <div className="py-0.5 px-4 text-left md:text-center font-medium font-sans tracking-tight text-sm bg-gradient-to-r text-white from-pink-500 via-purple-500 to-indigo-500 w-full"></div> */}
             <ColouredLine width={"full"} />

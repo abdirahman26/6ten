@@ -127,9 +127,16 @@ function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a href="https://flowbite.com/" className="flex items-center">
-              <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+              <span
+                style={{
+                  fontFamily: "HoltWood One SC",
+                  fontWeight: 400,
+                  fontStyle: "normal",
+                }}
+                className="self-center text-2xl font-semibold whitespace-nowrap text-white"
+              >
                 6-TEN
-                <span className="text-[var(--linePink)]">.</span>
+                <span className="text-cyan-600">.</span>
               </span>
             </a>
           </div>
