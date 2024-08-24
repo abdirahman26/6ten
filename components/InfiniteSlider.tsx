@@ -4,6 +4,9 @@ import SunnahGuy from '@public/images/sunnahguy_white.jpg';
 import OliveTree from '@public/images/olivetree.jpg';
 import Faithfuel from '@public/images/faithfuel.svg';
 import Quranly from '@public/images/Quranly.png';
+import Syndeed from '@public/images/syndeed.webp';
+import Wondamix from '@public/images/wondamix.webp';
+import DsKitchen from '@public/images/DsKitchen.png';
 
 const InfiniteSlider = () => {
 
@@ -54,6 +57,33 @@ const InfiniteSlider = () => {
             style={{ borderRadius: '30%' }}
           />
         </li>
+        <li>
+          <img
+            src={Syndeed.src}
+            alt="Syndeed"
+            width={79}
+            height={24}
+            style={{ filter: 'invert(1)' }}
+          />
+        </li>
+        <li>
+          <img
+            src={Wondamix.src}
+            alt="Wondamix"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
+          />
+        </li>
+        <li>
+          <img
+            src={DsKitchen.src}
+            alt="DsKitchen"
+            width={79}
+            height={24}
+            style={{ borderRadius: '40%' }}
+          />
+        </li>
       </ul>
       <ul className="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
       <li>
@@ -98,6 +128,33 @@ const InfiniteSlider = () => {
             width={79}
             height={24}
             style={{ borderRadius: '30%' }}
+          />
+        </li>
+        <li>
+          <img
+            src={Syndeed.src}
+            alt="Syndeed"
+            width={79}
+            height={24}
+            style={{ filter: 'invert(1)' }}
+          />
+        </li>
+        <li>
+          <img
+            src={Wondamix.src}
+            alt="Wondamix"
+            width={79}
+            height={24}
+            style={{ borderRadius: '50%' }}
+          />
+        </li>
+        <li>
+          <img
+            src={DsKitchen.src}
+            alt="DsKitchen"
+            width={79}
+            height={24}
+            style={{ borderRadius: '40%' }}
           />
         </li>
       </ul>
