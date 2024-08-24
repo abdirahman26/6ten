@@ -19,9 +19,9 @@ const Card: React.FC<CardProps> = ({ title, content }) => {
         {content}
       </p>
       <div className="text-center">
-        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-[var(--lineIndigo)] text-white mx-auto text-center rounded-full relative mt-4">
+        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-cyan-500 text-white mx-auto text-center rounded-full relative mt-4">
           <span>Learn More</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-[var(--linePink)] to-transparent" />
+          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-teal-500 to-transparent" />
         </button>
       </div>
     </div>

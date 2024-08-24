@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Pacifico&display=swap');
+
 
 
 @layer utilities {
@@ -97,7 +99,12 @@ body {
   /* text colors */
   --textPrimary: #9ca3af;
   --textSecondary: #d1d5db;
-  
+
+
+  /* line colors */
+  --greenLight: #ccff33;
+  --green: #38b000;
+  --greenDark: #008000;
 
 
 
