@@ -18,7 +18,7 @@ const InfiniteSlider = () => {
             alt="The Sunnah Guy"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -27,7 +27,7 @@ const InfiniteSlider = () => {
             alt="Olive Tree Events"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -44,7 +44,7 @@ const InfiniteSlider = () => {
             alt="Quranly"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -71,7 +71,7 @@ const InfiniteSlider = () => {
             alt="Wondamix"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -80,7 +80,7 @@ const InfiniteSlider = () => {
             alt="DsKitchen"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
       </ul>
@@ -91,7 +91,7 @@ const InfiniteSlider = () => {
             alt="The Sunnah Guy"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -100,7 +100,7 @@ const InfiniteSlider = () => {
             alt="Olive Tree Events"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -117,7 +117,7 @@ const InfiniteSlider = () => {
             alt="Quranly"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -144,7 +144,7 @@ const InfiniteSlider = () => {
             alt="Wondamix"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
         <li>
@@ -153,7 +153,7 @@ const InfiniteSlider = () => {
             alt="DsKitchen"
             width={79}
             height={24}
-            style={{ borderRadius: '40%' }}
+            style={{ borderRadius: '50%' }}
           />
         </li>
       </ul>
