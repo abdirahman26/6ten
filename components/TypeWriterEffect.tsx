@@ -1,31 +1,32 @@
 "use client";
 import { TypewriterEffectSmooth } from "@components/ui/typewriter-effect";
-export function TypeWriterEffect() {
+
+export function TypeWriterEffect({}) {
   const words = [
     {
-      text: "Unlock",
+      text: "Management/Ventures",
     },
     {
-      text: "Your",
+      text: "For",
     },
     {
-      text: "Full",
+      text: "Elite",
     },
     {
-      text: "Potential",
+      text: "Talent",
     },
-    {
-      text: "with",
-    },
-    {
-      text: "6-TEN.",
-      className: "text-cyan-500",
-    },
+    // {
+    //   text: "",
+    // },
+    // {
+    //   text: "Movin",
+    //   className: "text-cyan-500",
+    // },
   ];
   return (
     <div className="flex flex-col items-center justify-center h-[rem]  ">
-      <p className="text-gray-300 lg:text-xl xl:text-2xl sm:text-lg">
-        The road to stardom starts from here
+      <p className="text-gray-300 lg:text-xl xl:text-3xl sm:text-lg">
+        {/* Management for elite talent. */}
       </p>
       <TypewriterEffectSmooth words={words} />
     </div>

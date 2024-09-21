@@ -5,6 +5,8 @@ import styled from "styled-components";
 import { TypeWriterEffect } from "@components/TypeWriterEffect";
 import InfiniteSlider from "@components/InfiniteSlider";
 import ColouredLine from "@components/ColouredLine";
+import { Button } from "@/components/ui/button";
+import { Sparkles } from "lucide-react";
 
 function Home() {
   const slideVariants = [
@@ -18,23 +20,36 @@ function Home() {
     <>
       <div className="flex h-screen justify-center items-center flex-col">
         <TypeWriterEffect />
-        <button className="px-4 py-2 backdrop-blur-sm border bg-[var(--lineIndingo)] border-cyan-500 text-white mx-auto text-center rounded-full relative mt-4">
-          <span>Join now →</span>
-          <div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-teal-500 to-transparent" />
-        </button>
+        <div className="mb-36 justify-center">
+          <div className="flex gap-x-20 mt-12">
+            <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
+              <span className="relative flex items-center justify-center">
+                I'm A Creator
+                {/* <Sparkles className="ml-2 h-5 w-5 animate-pulse" /> */}
+              </span>
+              <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
+            </Button>
+            <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
+              <span className="relative flex items-center justify-center">
+                I'm A Brand
+                {/* <Sparkles className="ml-2 h-5 w-5 animate-pulse" /> */}
+              </span>
+              <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
+            </Button>
+          </div>
+        </div>
 
-        <div className="flex flex-col items-center justify-center mt-4 pt-10 pb-10">
+        <div className="flex flex-col items-center justify-center mt-4 ">
           <div className="flex flex-col items-center justify-center">
             <h1 className="text-4xl font-bold text-center text-[var(--textSecondary)]">
-              6-TEN<span className="text-cyan-600">.</span> Clientele
+              Our Valued Clients
             </h1>
-            {/* <div className="py-0.5 px-4 text-left md:text-center font-medium font-sans tracking-tight text-sm bg-gradient-to-r text-white from-pink-500 via-purple-500 to-indigo-500 w-full"></div> */}
             <ColouredLine width={"full"} />
           </div>
         </div>
 
         <div className="flex items-center justify-center p-4">
-          <div className="max-w-[20rem] sm:max-w-[30rem]">
+          <div className="max-w-[20rem] sm:max-w-[30rem] mt-6">
             <InfiniteSlider />
           </div>
         </div>

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@components/Button";
 import { TbHeartHandshake } from "react-icons/tb";
+import Image from "next/image";
+import Logo from ".././public/images/newLogo.png";
 
 function NavBar() {
   const pathname = usePathname();
@@ -34,16 +36,17 @@ function NavBar() {
     }`;
 
   return (
-    <nav className=" border-gray-200">
+    <nav className=" border-gray-200 pt-4">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => handleClick("/")}
         >
-          <span className="text-white font-bold text-4xl">
+          {/* <span className="text-white font-bold text-4xl">
             6-TEN<span className="text-cyan-600">.</span>
-          </span>
+          </span> */}
+          <Image src={Logo} alt="6-TEN" height={180} width={180} />
         </Link>
         <button
           type="button"
@@ -87,10 +90,10 @@ function NavBar() {
                 className={linkClassName("/services")}
                 onClick={() => handleClick("/services")}
               >
-                Our Services
+                Services
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/talent"
                 className={linkClassName("/talent")}
@@ -98,7 +101,7 @@ function NavBar() {
               >
                 Our Talent
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/ventures"
@@ -139,10 +142,10 @@ function NavBar() {
                 className={linkClassName("/services")}
                 onClick={() => handleClick("/services")}
               >
-                Our Services
+                Services
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="/talent"
                 className={linkClassName("/talent")}
@@ -150,7 +153,7 @@ function NavBar() {
               >
                 Our Talent
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="/ventures"

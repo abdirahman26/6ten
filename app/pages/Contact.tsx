@@ -1,11 +1,12 @@
 "use client";
 
+import Form from "@components/ui/Form";
 import React from "react";
 
 export function ContactSection() {
   return (
-    <section className="body-font relative text-gray-400">
-      <div className="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
+    <>
+      {/* <div className="relative flex items-top justify-center min-h-screen sm:items-center sm:pt-0">
         <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
           <div className="mt-8 overflow-hidden">
             <div className="grid grid-cols-1 md:grid-cols-2">
@@ -131,7 +132,8 @@ export function ContactSection() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div> */}
+      <Form />
+    </>
   );
 }

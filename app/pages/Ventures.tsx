@@ -3,14 +3,15 @@
 import React from "react";
 import Image from "next/image";
 import ServicesAction from "@/sections/Services/ServicesAction";
+import { TypeWriterEffect } from "@components/TypeWriterEffect";
 
 function Ventures() {
   return (
     <>
       <div className="relative h-screen w-full">
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <div className="flex flex-col items-center justify-center text-center pt-36">
           <h1 className="text-4xl md:text-6xl font-bold text-[var(--textPrimary)]">
-            Where Influence Meets Business
+            <TypeWriterEffect />
           </h1>
           <p className="text-lg md:text-2xl mt-4 text-[var(--textSecondary)]">
             Empowering your creativity with strategic support. Let us bring your
