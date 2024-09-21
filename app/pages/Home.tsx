@@ -24,14 +24,14 @@ function Home() {
           <div className="flex gap-x-20 mt-12">
             <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
               <span className="relative flex items-center justify-center">
-                I'm A Creator
+                I Am A Creator
                 {/* <Sparkles className="ml-2 h-5 w-5 animate-pulse" /> */}
               </span>
               <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
             </Button>
             <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
               <span className="relative flex items-center justify-center">
-                I'm A Brand
+                I Am A Brand
                 {/* <Sparkles className="ml-2 h-5 w-5 animate-pulse" /> */}
               </span>
               <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>

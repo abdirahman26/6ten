@@ -37,7 +37,7 @@ export default function Form() {
             Get in touch today
           </h2>
           <p className="text-lg text-[var(--textSecondary)]">
-            Let's collaborate to elevate your brand or creator journey.
+            Let us collaborate to elevate your brand or creator journey.
           </p>
           <div
             className="flex items-center mt-8 text-[var(--textSecondary)]
