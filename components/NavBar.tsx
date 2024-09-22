@@ -86,8 +86,8 @@ function NavBar() {
             </li>
             <li>
               <Link
-                href="/services"
-                className={linkClassName("/services")}
+                href="#services"
+                className={`${linkClassName("/")} scroll-smooth `}
                 onClick={() => handleClick("/services")}
               >
                 Services
@@ -130,7 +130,7 @@ function NavBar() {
             <li>
               <Link
                 href="/"
-                className={linkClassName("/")}
+                className={`${linkClassName("/")} scroll-smooth `}
                 onClick={() => handleClick("/")}
               >
                 Home
@@ -138,7 +138,7 @@ function NavBar() {
             </li>
             <li>
               <Link
-                href="/services"
+                href="#services"
                 className={linkClassName("/services")}
                 onClick={() => handleClick("/services")}
               >

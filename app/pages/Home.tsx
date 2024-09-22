@@ -7,6 +7,8 @@ import InfiniteSlider from "@components/InfiniteSlider";
 import ColouredLine from "@components/ColouredLine";
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import ServiceGrid from "@/services/ServicesGrid";
+import RotatingWords from "@components/RotatingWords";
 
 function Home() {
   const slideVariants = [
@@ -19,8 +21,9 @@ function Home() {
   return (
     <>
       <div className="flex h-screen justify-center items-center flex-col">
-        <TypeWriterEffect />
-        <div className="mb-36 justify-center">
+        <RotatingWords />
+
+        <div className="mb-36 justify-center align-middle">
           <div className="flex gap-x-20 mt-12">
             <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
               <span className="relative flex items-center justify-center">
@@ -53,6 +56,9 @@ function Home() {
             <InfiniteSlider />
           </div>
         </div>
+      </div>
+      <div id="services">
+        <ServiceGrid />
       </div>
     </>
   );

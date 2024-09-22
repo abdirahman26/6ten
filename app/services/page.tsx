@@ -4,11 +4,12 @@ import ServicesTopSection from "../sections/Services/ServicesTopSection";
 import ServicesMiddleAction from "@/sections/Services/SevicesMiddleSection";
 import ServicesAction from "@/sections/Services/ServicesAction";
 import FAQSection from "@/sections/Services/ServicesFAQSection";
+import ServiceGrid from "./ServicesGrid";
 
 export default function Page() {
   return (
     <>
-      <ServicesTopSection />
+      {/* <ServicesTopSection />
       <ServicesSection />
       <ServicesMiddleAction />
       <ServicesAction
@@ -16,7 +17,7 @@ export default function Page() {
         message="Contact us today to get started or learn more about how we can help you
         achieve your goals."
         button="Get in Touch →"
-      />
+      /> */}
     </>
   );
 }
