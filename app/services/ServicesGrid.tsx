@@ -71,7 +71,7 @@ export default function ServiceGrid() {
                 href="#"
                 className="text-sm font-medium mt-4 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-300"
               >
-                Let's Build &gt;
+                Let&apos;s Build &gt;
               </a>
             </div>
           </div>
