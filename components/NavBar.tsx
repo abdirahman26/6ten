@@ -86,6 +86,7 @@ function NavBar() {
             </li>
             <li>
               <Link
+                target="_parent"
                 href="#services"
                 className={`${linkClassName("/")} scroll-smooth `}
                 onClick={() => handleClick("/services")}

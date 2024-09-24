@@ -102,14 +102,8 @@ import {
   LucideIcon,
 } from "lucide-react";
 import { useRef, useState, FC } from "react";
-
-// Define the structure of the service object
-interface Service {
-  title: string;
-  description: string;
-  icon: LucideIcon; // Type for the icon component
-  color: string;
-}
+import FloatingIcons from "./components/FloatingIcons";
+import ServiceCard, { Service } from "./components/ServiceCard";
 
 const services: Service[] = [
   {
@@ -135,37 +129,6 @@ const services: Service[] = [
   },
 ];
 
-// Floating Icons Component
-const FloatingIcons: FC = () => (
-  <div className="absolute inset-0 overflow-hidden pointer-events-none">
-    {[...Array(20)].map((_, i) => (
-      <motion.div
-        key={i}
-        className="absolute text-gray-700 opacity-20"
-        initial={{
-          x: Math.random() * window.innerWidth,
-          y: Math.random() * window.innerHeight,
-          scale: Math.random() * 0.5 + 0.5,
-        }}
-        animate={{
-          x: Math.random() * window.innerWidth,
-          y: Math.random() * window.innerHeight,
-          rotate: Math.random() * 360,
-          transition: { duration: Math.random() * 10 + 10, repeat: Infinity },
-        }}
-      >
-        {i % 3 === 0 ? (
-          <LightbulbIcon size={32} />
-        ) : i % 3 === 1 ? (
-          <RocketIcon size={32} />
-        ) : (
-          <BeakerIcon size={32} />
-        )}
-      </motion.div>
-    ))}
-  </div>
-);
-
 // Scroll Progress Component
 const ScrollProgress: FC = () => {
   const { scrollYProgress } = useScroll();
@@ -176,52 +139,6 @@ const ScrollProgress: FC = () => {
       className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 z-50"
       style={{ scaleX, transformOrigin: "0%" }}
     />
-  );
-};
-
-// Service Card Component
-interface ServiceCardProps {
-  service: Service;
-  index: number;
-}
-
-const ServiceCard: FC<ServiceCardProps> = ({ service, index }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const cardRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: cardRef,
-    offset: ["start end", "end start"],
-  });
-
-  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [0.3, 1, 0.3]);
-  const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
-
-  return (
-    <motion.div
-      ref={cardRef}
-      style={{ opacity, scale }}
-      className="perspective-1000"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <Card
-        className={`bg-gradient-to-br ${service.color} border-none shadow-lg transition-all duration-300 transform hover:scale-105`}
-      >
-        <CardHeader>
-          <motion.div
-            className="w-16 h-16 bg-white rounded-full flex items-center justify-center mb-4"
-            animate={{ rotate: isHovered ? 360 : 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <service.icon className="w-8 h-8 text-gray-800" />
-          </motion.div>
-          <CardTitle className="text-3xl font-bold">{service.title}</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <p className="text-lg text-gray-100">{service.description}</p>
-        </CardContent>
-      </Card>
-    </motion.div>
   );
 };
 
