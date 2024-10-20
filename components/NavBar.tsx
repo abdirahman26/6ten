@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@components/Button";
-import { TbHeartHandshake } from "react-icons/tb";
 import Image from "next/image";
 import Logo from ".././public/images/newLogo.png";
 
@@ -18,9 +17,22 @@ function NavBar() {
   }, [pathname]);
 
   const handleClick = (path: string) => {
-    setActivePath(path);
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
+    if (path === "/services") {
+      if (pathname === "/") {
+        // If on the homepage, scroll to the services section
+        const servicesSection = document.getElementById("services");
+        if (servicesSection) {
+          servicesSection.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // If on another page, navigate to the homepage with the services hash
+        window.location.href = "/#services"; // Navigate to the homepage with a hash
+      }
+    } else {
+      setActivePath(path);
+      if (isMenuOpen) {
+        setIsMenuOpen(false);
+      }
     }
   };
 
@@ -36,16 +48,13 @@ function NavBar() {
     }`;
 
   return (
-    <nav className=" border-gray-200 pt-4">
+    <nav className="border-gray-200 pt-4">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => handleClick("/")}
         >
-          {/* <span className="text-white font-bold text-4xl">
-            6-TEN<span className="text-cyan-600">.</span>
-          </span> */}
           <Image src={Logo} alt="6-TEN" height={180} width={180} />
         </Link>
         <button
@@ -74,7 +83,7 @@ function NavBar() {
           className={`md:hidden w-full ${isMenuOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
-          <ul className=" gap-2 font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--main)]">
+          <ul className="gap-2 font-medium flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-[var(--main)]">
             <li>
               <Link
                 href="/"
@@ -85,24 +94,14 @@ function NavBar() {
               </Link>
             </li>
             <li>
-              <Link
-                target="_parent"
+              <a
                 href="#services"
-                className={`${linkClassName("/")} scroll-smooth `}
+                className={linkClassName("/")}
                 onClick={() => handleClick("/services")}
               >
                 Services
-              </Link>
+              </a>
             </li>
-            {/* <li>
-              <Link
-                href="/talent"
-                className={linkClassName("/talent")}
-                onClick={() => handleClick("/talent")}
-              >
-                Our Talent
-              </Link>
-            </li> */}
             <li>
               <Link
                 href="/ventures"
@@ -131,30 +130,21 @@ function NavBar() {
             <li>
               <Link
                 href="/"
-                className={`${linkClassName("/")} scroll-smooth `}
+                className={`${linkClassName("/")} scroll-smooth`}
                 onClick={() => handleClick("/")}
               >
                 Home
               </Link>
             </li>
             <li>
-              <Link
+              <a
                 href="#services"
                 className={linkClassName("/services")}
                 onClick={() => handleClick("/services")}
               >
                 Services
-              </Link>
+              </a>
             </li>
-            {/* <li>
-              <Link
-                href="/talent"
-                className={linkClassName("/talent")}
-                onClick={() => handleClick("/talent")}
-              >
-                Our Talent
-              </Link>
-            </li> */}
             <li>
               <Link
                 href="/ventures"

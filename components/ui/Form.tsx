@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -14,9 +14,19 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
+import router, { useSearchParams } from "next/navigation";
 
 export default function Form() {
   const [activeTab, setActiveTab] = useState("brand");
+  // Use useSearchParams to get the query parameter
+  const searchParams = useSearchParams();
+  const tab = searchParams.get("tab");
+
+  useEffect(() => {
+    if (tab === "creator" || tab === "brand") {
+      setActiveTab(tab); // set the activeTab based on query parameter
+    }
+  }, [tab]); // Runs the effect when the tab query parameter changes
 
   const handleSubmit = (event: React.FormEvent) => {
     event.preventDefault();
@@ -134,10 +144,10 @@ export default function Form() {
                   <form onSubmit={handleSubmit}>
                     <CardContent className="space-y-4">
                       <div className="space-y-2">
-                        <Label htmlFor="name">Name</Label>
+                        <Label htmlFor="email">Email</Label>
                         <Input
-                          id="name"
-                          placeholder="Enter your name"
+                          id="email"
+                          placeholder="Enter your email address"
                           required
                         />
                       </div>
