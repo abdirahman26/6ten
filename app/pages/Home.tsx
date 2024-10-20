@@ -1,41 +1,53 @@
-import { TypewriterEffect } from "@components/ui/typewriter-effect";
-import { m, motion } from "framer-motion";
-import React from "react";
-import styled from "styled-components";
-import { TypeWriterEffect } from "@components/TypeWriterEffect";
+"use client";
+
+import { useEffect } from "react";
+import { Button } from "@/components/ui/button";
 import InfiniteSlider from "@components/InfiniteSlider";
 import ColouredLine from "@components/ColouredLine";
-import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
 import ServiceGrid from "@/services/ServicesGrid";
 import RotatingWords from "@components/RotatingWords";
+import { useRouter } from "next/navigation";
 
 function Home() {
-  const slideVariants = [
-    "https://static.timesofisrael.com/www/uploads/2023/02/AP23039186120109-e1675835678772.jpg",
-    "https://e0.365dm.com/20/02/2048x1152/skysports-anthony-joshua-boxing_4929385.jpg?20200224092824",
-    "https://e0.365dm.com/23/06/2048x1152/skysports-luka-modric-croatia_6187674.jpg?20230614224314",
-    "https://images.wsj.net/im-976761/?width=1278&size=1",
-  ];
+  useEffect(() => {
+    // Check if the URL contains the hash for services
+    if (window.location.hash === "#services") {
+      const servicesSection = document.getElementById("services");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
+
+  const router = useRouter();
 
   return (
     <>
       <div className="flex h-screen justify-center items-center flex-col">
+        {/* Example of your rotating words component */}
         <RotatingWords />
 
         <div className="mb-36 justify-center align-middle">
-          <div className="flex gap-x-20 mt-12">
-            <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-x-20 mt-8 sm:mt-12">
+            <Button
+              onClick={() => {
+                router.push("/contact?tab=creator");
+              }}
+              className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-xl sm:text-2xl py-6 sm:py-8 px-8 sm:px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-110 sm:hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 w-full sm:w-auto"
+            >
               <span className="relative flex items-center justify-center">
                 I Am A Creator
-                {/* <Sparkles className="ml-2 h-5 w-5 animate-pulse" /> */}
               </span>
               <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
             </Button>
-            <Button className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-2xl py-8 px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50">
+            <Button
+              onClick={() => {
+                router.push("/contact?tab=brand");
+              }}
+              className="relative overflow-hidden bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 text-white font-extrabold text-xl sm:text-2xl py-6 sm:py-8 px-8 sm:px-10 rounded-md shadow-lg transform transition-all duration-300 ease-in-out hover:scale-110 sm:hover:scale-125 hover:shadow-2xl hover:from-blue-500 hover:via-cyan-500 hover:to-teal-500 focus:outline-none focus:ring-4 focus:ring-blue-600 focus:ring-opacity-50 w-full sm:w-auto"
+            >
               <span className="relative flex items-center justify-center">
                 I Am A Brand
-                {/* <Sparkles className="ml-2 h-5 w-5 animate-pulse" /> */}
               </span>
               <span className="absolute inset-0 h-full w-full bg-gradient-to-r from-teal-500 via-cyan-500 to-blue-500 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100"></span>
             </Button>
@@ -57,6 +69,8 @@ function Home() {
           </div>
         </div>
       </div>
+
+      {/* Services Section */}
       <div id="services">
         <ServiceGrid />
       </div>
