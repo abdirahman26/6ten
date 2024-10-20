@@ -1,12 +1,12 @@
 "use client";
 
 import Form from "@components/ui/Form";
-import React from "react";
+import React, { Suspense } from "react";
 
-export function ContactSection() {
+export default function ContactSection() {
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Form />
-    </>
+    </Suspense>
   );
 }
